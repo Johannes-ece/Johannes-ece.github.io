@@ -10,22 +10,22 @@ A long time in a galaxy far far away there was an unfinished project that was si
 
 What works:
 
-* High Voltage Power supply
-* Nixie Tubes
+High Voltage Power supply  
+Nixie Tubes
 
 What doesn’t:
 
-* Software
-* Case
+1. Software
+2. Case
 
 Wanted Features:
 
-* Automatic time setting via a timeserver
-* USB-C power supply
-* Dimming during night time
-* Frequent cycling of all numbers in order to reduce wear and tear
+Automatic time setting via a timeserver  
+USB-C power supply  
+Dimming during night time  
+Frequent cycling of all numbers in order to reduce wear and tear
 
-Starting with the case, a simple 3d case with 6 slots for the tubes is made. In order to archive a certain rough but still smooth look a resin based printing method is used. The back side of the case has space for the usb-c power supply.
+***
 
 ![](/images/5c91e1fc-3454-4080-8c7d-b05185aa3b3a.jpeg)
 
