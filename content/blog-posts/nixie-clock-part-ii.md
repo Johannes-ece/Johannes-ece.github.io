@@ -34,4 +34,7 @@ On the software side the wlan capabilities of the esp32 muc is used, which enabl
 
 From 23:00 - 6:45 and 8:45 - 16:00 the tubes are turned off, as each tube has a limited lifetime this measure extends it quite some time.
 
-Every two minutes the clock cycles through all digits, this helps with a phenomenon called „Cathode Poisoning“. This occurs 
+Every two minutes the clock cycles through all digits, this helps with a phenomenon called „Cathode Poisoning“. This occurs when only one digit is used for an extended amount of time like a hour digit on an clock. This cycling results in a slot machine effect that can be seen here.  
+Video slot machine
+
+The result:
