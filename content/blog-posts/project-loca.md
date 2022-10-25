@@ -1,6 +1,6 @@
 +++
 author = ""
-date = ""
+date = 2020-05-11T14:00:00Z
 hero = "/images/ebde5dc5-13ef-4a88-bd7b-3715f2408b8b.png"
 title = "Local Butchers´ Menu"
 type = "blog"
