@@ -7,12 +7,11 @@ sections:
 - type: heading
   label: Content
 - type: document
-  path: content/project-local-butchers-menu.md
-  label: Local Butchers´ Menu
-  match: "**/*"
-- type: document
   path: content/info.md
   label: Info Page
+- type: document
+  path: content/project-local-butchers-menu.md
+  label: Local Butchers´ Menu
 - type: directory
   path: content/blog-posts
   label: Blog posts
