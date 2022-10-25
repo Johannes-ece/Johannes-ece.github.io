@@ -31,4 +31,5 @@ fields:
   name: hero
   label: Hero Image
 pages:
+- content/blog-posts/monitoring-the-air.md
 - content/blog-posts/project-loca.md
