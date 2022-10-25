@@ -1,7 +1,7 @@
 +++
 author = "Johannes von Grundherr"
 date = 2021-10-19T13:00:00Z
-hero = "/images/750a4dd4-9773-42ca-9902-4901add9a59f.png"
+hero = "/images/ezgif-com-gif-maker.png"
 title = "Monitoring the air"
 type = "blog"
 
