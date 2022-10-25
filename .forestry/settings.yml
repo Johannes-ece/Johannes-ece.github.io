@@ -7,6 +7,10 @@ sections:
 - type: heading
   label: Content
 - type: document
+  path: ''
+  label: Local Butchers´ Menu
+  match: "**/*"
+- type: document
   path: content/info.md
   label: Info Page
 - type: directory
