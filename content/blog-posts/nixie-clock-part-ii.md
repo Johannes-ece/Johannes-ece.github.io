@@ -7,4 +7,31 @@ title = "Nixie Clock Part II"
 type = "blog"
 
 +++
-A long time in a galaxy far far away there was an unfinished project that was sitting on a table just waiting to be 
+A long time in a galaxy far far away there was an unfinished project that was sitting on a table just waiting to be completed.
+
+What works:
+
+* High Voltage Power supply
+* Nixie Tubes
+
+What doesn’t:
+
+* Software
+* Case
+
+Wanted Features:
+
+* Automatic time setting via a timeserver
+* USB-C power supply
+* Dimming during night time
+* Frequent cycling of all numbers in order to reduce wear and tear
+
+Starting with the case, a simple 3d case with 6 slots for the tubes is made. In order to archive a certain rough but still smooth look a resin based printing method is used. The back side of the case has space for the usb-c power supply.
+
+Pic of case
+
+On the software side the wlan capabilities of the esp32 muc is used, which enables the connection to a timeserver for accurate timekeeping. Since a RTC(Real-Time-Clock) is also used, a wlan connection is not always needed, but issues with timezones and the built in drift can be avoided with a connection.
+
+From 23:00 - 6:45 and 8:45 - 16:00 the tubes are turned off, as each tube has a limited lifetime this measure extends it quite some time.
+
+Every two minutes the clock cycles through all digits, this helps with a phenomenon called „Cathode Poisoning“. This occurs 
