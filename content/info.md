@@ -1,5 +1,5 @@
 +++
-date = 2003-06-01T13:00:00Z
+date = 2003-01-06T13:00:00Z
 title = "About Me"
 type = ""
 [contact_info]
