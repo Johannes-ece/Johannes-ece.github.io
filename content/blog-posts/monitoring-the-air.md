@@ -1,5 +1,5 @@
 +++
-author = ""
+author = "Johannes von Grundherr"
 date = ""
 hero = "/images/750a4dd4-9773-42ca-9902-4901add9a59f.png"
 title = "Monitoring the air"
