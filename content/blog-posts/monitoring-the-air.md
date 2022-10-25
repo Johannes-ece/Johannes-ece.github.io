@@ -1,6 +1,6 @@
 +++
 author = "Johannes von Grundherr"
-date = ""
+date = 2021-10-19T13:00:00Z
 hero = "/images/750a4dd4-9773-42ca-9902-4901add9a59f.png"
 title = "Monitoring the air"
 type = "blog"
