@@ -35,8 +35,8 @@ From 23:00 - 6:45 and 8:45 - 16:00 the tubes are turned off, as each tube has a 
 
 Every two minutes the clock cycles through all digits, this helps with a phenomenon called „Cathode Poisoning“. This occurs when only one digit is used for an extended amount of time like a hour digit on an clock. This cycling results in a slot machine effect that can be seen here.
 
-{{< youtube [ufGv2bSU54A](https://youtu.be/ufGv2bSU54A "https://youtu.be/ufGv2bSU54A") >}}
+{{< youtube (https://youtu.be/ufGv2bSU54A "https://youtu.be/ufGv2bSU54A") >}}
 
 The result:
 
-{{< youtube [I0eBycWUgTE](https://youtu.be/I0eBycWUgTE "https://youtu.be/I0eBycWUgTE") >}}
+{{< youtube (https://youtu.be/I0eBycWUgTE "https://youtu.be/I0eBycWUgTE") >}}
