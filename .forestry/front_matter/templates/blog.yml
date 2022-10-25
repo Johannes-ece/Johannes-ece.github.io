@@ -30,7 +30,3 @@ fields:
 - type: file
   name: hero
   label: Hero Image
-pages:
-- content/blog-posts/monitoring-the-air.md
-- content/blog-posts/nixie-clock-part-i.md
-- content/blog-posts/project-loca.md
