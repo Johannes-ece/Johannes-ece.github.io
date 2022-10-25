@@ -8,6 +8,8 @@ type = "blog"
 +++
 A long time in a galaxy far far away there was an unfinished project that was sitting on a table just waiting to be completed.
 
+***
+
 What works:
 
 High Voltage Power supply  
@@ -15,8 +17,8 @@ Nixie Tubes
 
 What doesn’t:
 
-1. Software
-2. Case
+Software  
+Case
 
 Wanted Features:
 
@@ -36,6 +38,8 @@ From 23:00 - 6:45 and 8:45 - 16:00 the tubes are turned off, as each tube has a 
 Every two minutes the clock cycles through all digits, this helps with a phenomenon called „Cathode Poisoning“. This occurs when only one digit is used for an extended amount of time like a hour digit on an clock. This cycling results in a slot machine effect that can be seen here.
 
 {{< youtube ufGv2bSU54A >}}
+
+***
 
 The result:
 
