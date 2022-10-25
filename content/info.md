@@ -1,5 +1,5 @@
 +++
-date = 2022-10-09T13:00:00Z
+date = 2020-10-09T13:00:00Z
 title = "About Me"
 type = ""
 [contact_info]
