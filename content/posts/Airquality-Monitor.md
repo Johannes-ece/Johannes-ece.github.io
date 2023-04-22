@@ -4,7 +4,6 @@ date: 2021-10-19
 hero: "/images/ezgif-com-gif-maker.png"
 title: "Airquality Monitor"
 ---
-
 Indoor air quality - you probably never taught about this, but it's just as, if not more important than outdoor air quality, since most people spend more than half of their day indoors. So how is the air?
 
 > Quick Note: You can find this projects code and documentation on [Github](https://github.com/Johannes-ece/AirQ)! 
