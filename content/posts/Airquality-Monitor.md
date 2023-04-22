@@ -3,6 +3,7 @@ author: "Johannes von Grundherr"
 date: 2021-10-19
 hero: "/images/ezgif-com-gif-maker.png"
 title: "Airquality Monitor"
+summary: "The Airquality Monitor project is about building a device that measures indoor air quality by detecting the levels of carbon dioxide, fine particles, and radioactivity using sensors such as MH-Z19C, PMSA003, and a Geiger-Müller tube, respectively. The project uses an ESP32 microcontroller to collect the sensor data and send it to an MQTT broker for analysis. The project also includes the design and development of a PCB and the Arduino sketch for the device."
 ---
 Indoor air quality - you probably never taught about this, but it's just as, if not more important than outdoor air quality, since most people spend more than half of their day indoors. So how is the air?
 

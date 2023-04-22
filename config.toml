@@ -26,8 +26,7 @@ month = "month"
 [params.homeInfoParams]
 Title = "About Me"
 Content = """
-I’m a 20 year old student studying electronics engineering at Friedrich-Alexander-Universität Erlangen-Nürnberg and Royal Melbourne Institute of Technology.
-My interests include problem solving, electronic and mechanical projects, some of them are shown on this site.
+I’m a 20-year-old electronics engineering student at Friedrich-Alexander-Universität Erlangen-Nürnberg and Royal Melbourne Institute of Technology. I’m passionate about problem-solving and enjoy working on electronic and mechanical projects. You can find some of my projects on this site.
 """
 [[params.socialIcons]]
   name = "github"
