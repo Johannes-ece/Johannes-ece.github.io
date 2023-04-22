@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://example.org/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nixie Clock Part II</title>
+      <link>http://example.org/nixie-clock-part-ii/</link>
+      <pubDate>Mon, 07 Feb 2022 13:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/nixie-clock-part-ii/</guid>
+      <description>A long time in a galaxy far far away there was an unfinished project that was sitting on a table just waiting to be completed.
+What works:
+High Voltage Power supply
+Nixie Tubes
+What doesn’t:
+Software
+Case
+Wanted Features:
+Automatic time setting via a timeserver
+USB-C power supply
+Dimming during night time
+Frequent cycling of all numbers in order to reduce wear and tear
+On the software side the wlan capabilities of the esp32 muc is used, which enables the connection to a timeserver for accurate timekeeping.</description>
+    </item>
+    
+    <item>
+      <title>Monitoring the air</title>
+      <link>http://example.org/monitoring-the-air/</link>
+      <pubDate>Tue, 19 Oct 2021 13:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/monitoring-the-air/</guid>
+      <description>Indoor air quality - you probably never taught about this, but it&amp;rsquo;s just as, if not more important than outdoor air quality, since most people spend more than half of their day indoors. So how is the air?
+Quick Note: You can find this projects code and documentation on Github!
+Well, lets quantify it: CO2 is the most important short-term indicator, its measured in ppm parts-per-million. If the level is too high you can&amp;rsquo;t concentrate at first and then get dizzy and sleepy:</description>
+    </item>
+    
+    <item>
+      <title>Nixie clock Part I</title>
+      <link>http://example.org/nixie-clock-part-i/</link>
+      <pubDate>Mon, 08 Feb 2021 13:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/nixie-clock-part-i/</guid>
+      <description>One might know them from the bomb-defusing scene in the Bond movie &amp;ldquo;Goldfinger&amp;rdquo; or the Divergence Meter from Steins;Gate.
+In short, its ten(0-9) wires glowing neon yellow in a vacuum tube, first replaced by seven-segment displays, they are becoming increasingly popular nowadays, because of their beauty.
+There are quite a lot of kits available online, but there is the fun in buying one?
+Designing the Circuit: The difficulty in it lies in the operating voltage of a Nixie-clock: ~170V</description>
+    </item>
+    
+    <item>
+      <title>Local Butchers´ Menu</title>
+      <link>http://example.org/project-loca/</link>
+      <pubDate>Mon, 11 May 2020 14:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/project-loca/</guid>
+      <description>So as most of you during the Pandemic, studying or working from home, I and especially my neighbors struggled with eating a healthy meal every day, since they were used to the canteen at work and hadn&amp;rsquo;t had the time to cook each day.
+So as most of you during the Pandemic, studying or working from home, I and especially my neighbors struggled with eating a healthy meal every day, since they were used to the canteen at work and hadn&amp;rsquo;t had the time to cook each day.</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>http://example.org/info/</link>
+      <pubDate>Mon, 06 Jan 2003 13:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/info/</guid>
+      <description>I’m a 20 year old student studying electronics engineering at Friedrich-Alexander-Universität Erlangen-Nürnberg and Royal Melbourne Institute of Technology.
+My interests include problem solving, electronic and mechanical projects, some of them are shown on this site.</description>
+    </item>
+    
+  </channel>
+</rss>

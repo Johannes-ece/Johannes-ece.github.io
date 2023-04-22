@@ -1,0 +1,129 @@
+baseURL = 'https://johannes-ece.github.io'
+languageCode = 'en-us'
+title = 'Johannes v. Grundherr'
+theme = 'PaperMod'
+
+enableRobotsTXT = true
+enableEmoji = true
+EnableInstantClick = true
+
+[params]
+description = "Johannes v. Grundherr - Personal Site"
+author = "Johannes v. Grundherr"
+images = ["cover.png"]
+favicon = "favicon.ico"
+DateFormat = "2006-01-02"
+useCustomAnalytics = false
+mainSections = ["posts"]
+ShowShareButtons = false
+ShowReadingTime = true
+[taxonomies]
+year = "year"
+month = "month"
+
+
+
+[params.homeInfoParams]
+Title = "About Me"
+Content = """
+I’m a 20 year old student studying electronics engineering at Friedrich-Alexander-Universität Erlangen-Nürnberg and Royal Melbourne Institute of Technology.
+My interests include problem solving, electronic and mechanical projects, some of them are shown on this site.
+"""
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/Johannes-ece"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/johannes-v-grundherr"
+
+[[params.socialIcons]]
+  name = "email"
+  url = "j.grundherr@pm.me"
+
+
+[params.languages.en]
+languageName = "English"
+
+[params.markup.goldmark.renderer]
+unsafe = true
+
+[params.markup.highlight]
+style = "dracula"
+lineNos = false
+noClasses = false
+
+[permalinks]
+notes = "/:section/:year/:month/:slugorfilename"
+post = "/post/:year/:month/:slug/"
+year = "/post/:slug/"
+month = "/post/:slug/"
+
+
+[profileMode]
+enabled = false
+title = "PaperMod"
+imageUrl = "#"
+imageTitle = "my image"
+
+  [[profileMode.buttons]]
+  name = "Archives"
+  url = "archives"
+
+  [[profileMode.buttons]]
+  name = "Tags"
+  url = "tags"
+
+
+ 
+
+[menu]
+  [[menu.main]]
+  name = "Posts"
+  url = "/posts/"
+  weight = 1
+
+  [[menu.main]]
+  name = "Archive"
+  url = "/archives/"
+  weight = 2
+
+  [[menu.main]]
+  name = "Github"
+   url = "https://github.com/Johannes-ece"
+  weight = 3
+
+[languages.en]
+  languageName = "English"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.highlight]
+  style = "dracula"
+  lineNos = false
+  noClasses = false
+
+
+[privacy.vimeo]
+disabled = false
+simple = true
+
+[privacy.twitter]
+disabled = false
+enableDNT = true
+simple = true
+
+[privacy.instagram]
+disabled = false
+simple = true
+
+[privacy.youtube]
+disabled = false
+privacyEnhanced = true
+
+[services.instagram]
+disableInlineCSS = true
+
+[services.twitter]
+disableInlineCSS = true
