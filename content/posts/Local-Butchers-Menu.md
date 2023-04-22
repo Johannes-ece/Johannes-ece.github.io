@@ -1,5 +1,5 @@
 ---
-title: Local Butchers´ Menu
+title: Local Butchers Menu
 author: "Johannes von Grundherr"
 date: 2020-05-11
 hero: "/images/ebde5dc5-13ef-4a88-bd7b-3715f2408b8b.png"

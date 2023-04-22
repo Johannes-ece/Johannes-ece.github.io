@@ -3,7 +3,6 @@ author: "Johannes von Grundherr"
 date: 2021-02-08
 hero: "/images/033cf622-fa6e-4beb-b22f-8e2e1c8146f2.jpeg"
 title: "Nixie Clock Part I"
-
 ---
 
 One might know them from the bomb-defusing scene in the Bond movie "Goldfinger" or the Divergence Meter from Steins;Gate.\
