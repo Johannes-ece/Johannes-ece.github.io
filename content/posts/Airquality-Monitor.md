@@ -1,57 +1,55 @@
 ---
-author: "Johannes von Grundherr"
-date: 2021-10-19
-hero: "/images/ezgif-com-gif-maker.png"
-title: "Airquality Monitor"
-summary: "The Airquality Monitor project is about building a device that measures indoor air quality by detecting the levels of carbon dioxide, fine particles, and radioactivity using sensors such as MH-Z19C, PMSA003, and a Geiger-Müller tube, respectively. The project uses an ESP32 microcontroller to collect the sensor data and send it to an MQTT broker for analysis. The project also includes the design and development of a PCB and the Arduino sketch for the device."
+author: Johannes von Grundherr
+date: '2021-10-19T00:00:00.000Z'
+hero: /images/ezgif-com-gif-maker.png
+title: Airquality Monitor
 ---
-Indoor air quality - you probably never taught about this, but it's just as, if not more important than outdoor air quality, since most people spend more than half of their day indoors. So how is the air?
 
-> Quick Note: You can find this projects code and documentation on [Github](https://github.com/Johannes-ece/AirQ)! 
+Indoor air quality is often overlooked, but it's critical to our health as we spend the majority of our time indoors. Therefore, it's essential to assess the air quality and make improvements if necessary. So, have you checked the air quality in your environment?
 
-**Well, lets quantify it:** CO2 is the most important short-term indicator, its measured in ppm parts-per-million. If the level is too high you can't concentrate at first and then get dizzy and sleepy:
+> Quick Note: You can find this projects code and documentation on [Github](https://github.com/Johannes-ece/AirQ)!
+
+**Well, lets quantify it:**  CO2 is the most crucial short-term indicator, measured in parts per million (ppm). If the level is too high, you may find it difficult to concentrate, and then you may feel dizzy and sleepy:
 
 ![](https://www.iqhome.org/image/cache/catalog/blog/air_quality/co2-ppm-table-759x800.png)
 
-**So how can we test it?** 
+**So how can we test it?**
 
-With a sensor of course, we will be using the MH-Z19C, it has a range from 400-500ppm so the above chart fits perfectly in it.
-
+We'll be using the MH-Z19C sensor to measure the CO2 level. This sensor has a range from 400 to 5000ppm, so it's suitable for the above chart.
 ![](/images/fdcac987-1828-4c39-a5f9-9d24e8900101.jpeg)
 
-Fine particles are not that important in the short term, but in the long term, it can have serious impacts on your health, its measured in particles per 0.1l of air:
-
+Fine particles may not have an immediate impact, but in the long term, they can seriously affect your health. They are measured in particles per 0.1l of air.
 ![](https://www.airveda.com/resources/images/pm_levels.png)
 
-To sense these particles we are using the PMSA003 from Plantower:
+To measure fine particles, we will be using the PMSA003 sensor from Plantower.
 
 ![](/images/14c3eeac-9bcd-490a-9d22-f449ed93f144.jpeg)
 
-The last major Indicator I want to use and which is a bit unusual is radioactivity, having the very harmful Radon-gas in mind.
+The last important indicator we will be measuring is radioactivity, with a focus on the harmful Radon gas.
 
 ![](https://www.fs-ev.org/fileadmin/user_upload/97_Service/Radonvorsorge/Radonkarte-BfS.jpg)
 
-Two major obstacles lie in detecting Radon, it comes up in waves as decayed Uran from under the house and it only emits alpha rays.
+Detecting Radon presents two significant challenges as it is released intermittently from decaying uranium under the house and can only be detected by measuring alpha particles. If you live in an older house with a porous foundation located in one of the red areas, you may want to consider monitoring Radon levels. This might concern me as I am in this situation.
 
-If you are panicking right now while reading this, it should only concern you if you live in an older house which might have a porous foundation and you live in one of the red areas. For me it's both.
+**Why is detecting alpha radiation a Problem?**
 
-\*\*\
-Why is detecting alpha radiation a Problem?\*\*
+Radon is undetectable by a traditional Geiger-Müller tube due to the alpha radiation it emits, and modern detection systems rely on complicated methods such as optical recognition of impacts on a CMOS sensor. 
 
-It's undetectable by a traditional [Geiger-Müller](https://en.wikipedia.org/wiki/Geiger%E2%80%93M%C3%BCller_tube) tube, only with quite complicated systems, the modern one being optical recognition of "impacts" on a cmos-sensor.\
-So how do we detect radon? Well, we don't, we detect the gamma rays from the lead and bismuth:
+Instead of directly detecting radon, we can detect the gamma rays emitted by its decay products, such as lead and bismuth.
 
 ![](/images/4c323a14-837f-469e-aebc-dbeca72ba634.png)![](/images/31ae8b84-e577-4737-aa9d-e56937744e73.jpeg)
 
-Since a Geiger-Müller Tube works only with very high voltages, mine takes 403V, the circuit is somewhat complicated, its partly inspired form the [Multigeiger ](https://github.com/ecocurious2/MultiGeiger)project on GitHub:
+Since a Geiger-Müller Tube works only with very high voltages, such as the 403V used by my tube, the circuit required is somewhat complicated. It is partly inspired by the Multigeiger project on GitHub.
 
 ![](/images/ezgif-com-gif-maker.png)
 
-In short, we generate short pulses from the micro-controller([esp32](https://www.espressif.com/en/products/socs/esp32-s3)), which generates very high voltages from the coil([Lenz's law](https://www.britannica.com/science/Lenzs-law)). Stopping when the cap is charged. Then, once a gamma ray goes through the tube and making it inductive, the capacitor discharges for a microsecond which we detect.
+In short, we generate short pulses from the micro-controller(esp32), which generates very high voltages from the coil(Lenz's law). Stopping when the cap is charged. Then, once a gamma ray goes through the tube and making it inductive, the capacitor discharges for a microsecond which we detect.
 
-**That's basically it**, the two sensors I wrote about earlier both use serial communication, the "simple" environmental sensor on the bottom right uses I2C.\
-For future expansion I added four more additional I2C headers, since you never know you need them until you do...
 
+
+The two sensors discussed earlier use serial communication, while the environmental sensor on the bottom right uses I2C. 
+
+To allow for future expansion, I added four additional I2C headers, as it's always useful to have extra room for more components.
 ***
 
 **The PCB:**
@@ -62,37 +60,37 @@ For future expansion I added four more additional I2C headers, since you never k
 
 Beautiful, isn't it?
 
-In retrospect I made three mistakes when designing it, cap C3 and the CO2 Sensor have the wrong footprints and I bought the wrong esp32, which is not pin-compatible to the one I planned for. So please forgive all the jumpers:
+Looking back, I realize that there were three errors in my design. Firstly, I used the wrong footprints for cap C3 and the CO2 sensor. Secondly, I mistakenly bought an incompatible ESP32, which resulted in the need for jumpers.
 
 ![](/images/fbbb711d-2e44-431f-af5e-ddba564d4d24.jpeg)**So how does the software work?**
 
-I already explained how the tube is driven, apart from that the esp32 just collects the sensors data and sends it off to my mqtt broker.
+I have already explained how the tube is driven. Apart from that, the ESP32 collects the sensor data and sends it to my MQTT broker.
 
 Since the "backend" is somewhat complicated I can only forward you too Andreas Spiess's perfect explanation of it: [https://www.youtube.com/watch?v=JdV4x925au0](https://www.youtube.com/watch?v=JdV4x925au0 "https://www.youtube.com/watch?v=JdV4x925au0")
 
 ***
 
-You can find the Arduino sketch in this projects [Github](https://github.com/Johannes-ece/AirQ/blob/main/airq.ino).
+> You can find the Arduino sketch in this projects [Github](https://github.com/Johannes-ece/AirQ/blob/main/airq.ino).
 
 ***
 
-**Analyzing the data:**\
+**Analyzing the data:**
 Since we are using [mqtt](https://en.wikipedia.org/wiki/MQTT) and InfluxDB, we can easily plot the data with the popular graphing tool Grafana:
 
 ![](/images/16ef45fd-817b-43ff-92e1-cd1a872d3af4.png)
 
-![](/images/ecfb8705-2edb-4cb1-9067-0e22ae40cde2.png)On the last plot you can see the impact of mowing the lawn on the fine particles sensor about 10m from the rooms window, but still perfectly healthy levels.
+![](/images/ecfb8705-2edb-4cb1-9067-0e22ae40cde2.png)
 
-On the lower left you can see CO2 chart of me writing this and occasionally opening the window for 30 seconds.
+The last plot illustrates the effect of lawn mowing on the fine particle sensor located about 10 meters away from the room's window, but the levels remain within the healthy range. 
 
-Top left is the gamma-ray chart in micro Sievert, which show us the typical background radiation, no sign of radon so far, phewwww...
+On the lower left, the CO2 chart shows the levels during the time of writing, with occasional 30-second windows opened. 
+
+Finally, the top left chart represents the gamma-ray readings in micro Sievert, showing typical background radiation levels and no signs of radon thus far, which is a relief.
 
 ***
 
 **Conclusion:**
 
-Apart from putting my, lung-cancer-fearing heart at ease, I learned quite a lot about the components that define our air quality, be it co2 or ionizing radiation.\
-The pcb order was a bit rushed, causing a few mistakes to slip through, but it was only ever intended as a prototype, so if it works, it work.
+Apart from putting my heart at ease, which was worrying about the potential lung cancer due to poor indoor air quality, I have also gained a wealth of knowledge about the various components that affect our air quality, such as CO2 and ionizing radiation. Although there were a few mistakes in the PCB design due to a rushed order, it served its purpose as a prototype, and if it works, then it works.
 
-On the software/hardware side I am quite astonished how much a 5$ ESP32 can do, quite a lot cheaper than an Arduino, yet so much more powerful.\
-I will definitely use it in future projects, like monitoring the soil moisture of my plants wirelessly or using it with a camera a long distance lora-wan module to monitor local wildlife.
+On the software and hardware side, I am amazed at the capabilities of the ESP32, which costs only $5 and is much more powerful than an Arduino. I plan to use it in future projects, such as wirelessly monitoring the soil moisture of my plants or using it with a long-distance LoRaWAN module and a camera to monitor local wildlife.
