@@ -38,7 +38,7 @@ I’m a 20-year-old electronics engineering student at Friedrich-Alexander-Unive
 
 [[params.socialIcons]]
   name = "email"
-  url = "j.grundherr@pm.me"
+  url = "mailto:j.grundherr@pm.me"
 
 
 [params.languages.en]
