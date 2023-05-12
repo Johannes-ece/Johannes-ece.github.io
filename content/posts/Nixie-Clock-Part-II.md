@@ -41,7 +41,7 @@ The tubes are turned off from 23:00 to 6:45 and from 8:45 to 16:00. Since each t
 
 Every two minutes, the clock cycles through all digits, which helps prevent a phenomenon called 'cathode poisoning'. This occurs when only one digit is used for an extended amount of time, such as an hour digit on a clock. The cycling results in a slot machine effect that can be seen here.
 
-{{\< youtube ufGv2bSU54A >}}
+{{< youtube ufGv2bSU54A >}}
 
 ***
 Nixie clocks are truly stunning pieces of technology that embody a unique and timeless beauty. The glowing numerals and symbols that dance within the vacuum-sealed glass tubes are mesmerizing to watch, and their warm, orange hue adds a touch of warmth to any space.
@@ -51,4 +51,4 @@ Unlike modern digital displays, nixie tubes are tactile and tactilely expressive
 It's no wonder that these vintage devices have experienced a resurgence in popularity in recent years, as more and more people are rediscovering the simple pleasures of analog technology:
 ***
 
-{{\< youtube I0eBycWUgTE >}}
+{{< youtube I0eBycWUgTE >}}
